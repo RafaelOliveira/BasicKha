@@ -1,0 +1,1 @@
+A small example of a Kha game that loads a image and use the keyboard and mouse
