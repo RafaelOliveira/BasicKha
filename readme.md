@@ -19,6 +19,8 @@ git submodule foreach --recursive git pull origin master
 ```
 
 **Kha from haxelib**  
-Waiting for the next release.
+Kha made a big update, so I'm waiting for the next haxelib release to update the instructions.  
+
+For bigger projects, the git version is recommended, because all the tools to compile the project (including haxe) are included and can be versioned. You only need to install nodejs.
 
 [nodejs]:https://nodejs.org
