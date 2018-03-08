@@ -4,8 +4,8 @@ import kha.Assets;
 import kha.Framebuffer;
 import kha.Image;
 import kha.input.Keyboard;
+import kha.input.KeyCode;
 import kha.input.Mouse;
-import kha.Key;
 import kha.Scaler;
 import kha.System;
 
@@ -38,30 +38,30 @@ class BasicKha
 		initialized = true;
 		
 		ball = Assets.images.ball;
-		xPos = (System.pixelWidth / 2) - (ball.width / 2);
-		yPos = (System.pixelHeight / 2) - (ball.width / 2);
+		xPos = (System.windowWidth() / 2) - (ball.width / 2);
+		yPos = (System.windowHeight() / 2) - (ball.width / 2);
 	}
 	
-	function keyDown(key:Key, char:String):Void
+	function keyDown(key:KeyCode):Void
 	{
 		switch(key)
 		{
-			case Key.LEFT:  keys[0] = true;
-			case Key.RIGHT: keys[1] = true;
-			case Key.UP:    keys[2] = true;
-			case Key.DOWN:  keys[3] = true;
+			case Left:  keys[0] = true;
+			case Right: keys[1] = true;
+			case Up:    keys[2] = true;
+			case Down:  keys[3] = true;
 			default: return;
 		}
 	}
 	
-	function keyUp(key:Key, char:String):Void
+	function keyUp(key:KeyCode):Void
 	{
 		switch(key)
 		{
-			case Key.LEFT:  keys[0] = false;
-			case Key.RIGHT: keys[1] = false;
-			case Key.UP:    keys[2] = false;
-			case Key.DOWN:  keys[3] = false;
+			case Left:  keys[0] = false;
+			case Right: keys[1] = false;
+			case Up:    keys[2] = false;
+			case Down:  keys[3] = false;
 			default: return;
 		}
 	}
