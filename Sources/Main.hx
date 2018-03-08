@@ -7,7 +7,7 @@ class Main
 {
 	public static function main()
 	{
-		System.init("BasicKha", 800, 600, initialized);
+		System.init({title: "BasicKha", width: 800, height: 600}, initialized);
 	}
 	
 	private static function initialized():Void 
